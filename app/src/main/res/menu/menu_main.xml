@@ -3,14 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="az.osmdroidprop.MainActivity">
     <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
         android:id="@+id/action_locate"
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="always"
         android:icon="@android:drawable/ic_menu_compass"/>
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_refresh"
         android:orderInCategory="101"
+        android:title="Update"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_directions"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="102"
         android:title="@string/action_settings"
         app:showAsAction="never" />
 </menu>
